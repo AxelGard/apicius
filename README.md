@@ -16,11 +16,16 @@ want to be installed.
 Apicius need python 3 to run. 
 
 For know you need to
-```batch
+```bash
 git clone git@github.com:AxelGard/apicius.git
 cd apicius/
-python3 -m apicius
 ```
+to then run 
+```bash
+sudo python3 -m apicius
+```
+Apicius needs sudo since it installs programs and 
+those install processes needs sudo. 
 
 ## Add a program 
 
