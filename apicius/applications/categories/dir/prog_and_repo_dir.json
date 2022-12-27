@@ -1,0 +1,15 @@
+{
+    "name":"Program and repositories directory",
+    "info":"",
+    "ask": "",
+    "distribution":{
+        "Unix":{
+            "cmd":[
+               "mkdir ~/Programs",
+               "mkdir ~/Programs/repositories"
+            ],
+            "note": "",
+            "ask":""
+        }
+    }
+}

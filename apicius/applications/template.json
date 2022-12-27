@@ -1,0 +1,14 @@
+{
+    "name":"template name",
+    "info":"",
+    "ask": "",
+    "distribution":{
+        "Ubuntu":{
+            "cmd":[
+                
+            ],
+            "info":"",
+            "ask": ""
+        }
+    }
+}
