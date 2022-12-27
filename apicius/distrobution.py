@@ -24,7 +24,7 @@ def set_distribution():
             AVAILABLE_DISTRIBUTIONS[distro_answer]
             passed_int = True 
         except Exception:
-            print("try again, if you don't want to exit input 0 ")
+            print("try again, if you want to exit input 0 ")
     
     if distro_answer == 0:
         return 
