@@ -1,9 +1,4 @@
 {
     "distribution":"",
-    "categories":[
-        "dir"
-    ],
-    "individual_programs":[
-        "webbrowsers/brave.json"
-    ]
+    "app_dir":"apicius/applications/"
 }

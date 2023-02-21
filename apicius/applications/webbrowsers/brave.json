@@ -14,9 +14,7 @@
         "Arch":{
             "cmd":[
                 "yay -S brave-bin"
-            ],
-            "info":"Unofficial package",
-            "ask": ""
+            ]
         }
     }
 }

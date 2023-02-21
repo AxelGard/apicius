@@ -1,12 +1,11 @@
-from typing import List, Set, Dict, Tuple
 import os 
 import json
 
-from ..distrobution import SET_DISTRIBUTION
+from .distribution import SET_DISTRIBUTION
 
 class Application: 
     def __init__(self, file_path):
-        self.app_dict = self.load_program(file_path)
+        self.app_dict = self.load_file(file_path)
         self.name = self.app_dict["name"]
         self.cmd = [] # ["sudo apt install name", ...]
         self.info_dict = {}
@@ -30,16 +29,25 @@ class Application:
             try:
                 os.system(c)
             except Exception: 
-                self.install_error()
+                self.install_error(c)
 
-    def load_file(path):
+    def info(self):
+        print(self.name)
+        print("-"*10)
+        print(self.app_dict["info"])
+        print("")
+
+    def load_file(self, path):
         f = open(path)
         data = json.load(f)
         f.close()
         return data
 
-    def install_error(self):
+    def install_error(self, cmd=""):
         """ call if erros install proccess happends """
         print("#"*10)
-        print(f"install error with {self.name}!")
+        print(f"install error with {self.name}!\nCaused by command: {cmd}")
         print("#"*10)
+
+    def __str__(self) -> str:
+        return f"App({self.name})"

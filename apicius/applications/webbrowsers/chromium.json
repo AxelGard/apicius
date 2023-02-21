@@ -1,0 +1,12 @@
+{
+    "name":"chromium",
+    "info":"Chromium is a free and open-source web browser project, mainly developed and maintained by Google. this codebase provides the vast majority of code for the Google Chrome browser.",
+    "distribution":{
+        "Ubuntu":{
+            "cmd":[
+               "sudo apt update",
+               "sudo apt install -y chromium-browser" 
+            ]
+        }
+    }
+}

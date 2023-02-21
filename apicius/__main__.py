@@ -1,29 +1,31 @@
-from . import distrobution
+from . import distribution
 from . import logo
+from . import selector
 import json 
+import os 
+
+CONFIG = {}
 
 def load_config():
     f = open("./config.json")
     data = json.load(f)
     f.close()
-    return data
+    global CONFIG
+    CONFIG = data
+    return CONFIG
 
 
 
 def main() -> None: 
+    os.system('clear')
     logo.print_logo()
-    if distrobution.SET_DISTRIBUTION == "":
-        distrobution.set_distribution()
-    if distrobution.SET_DISTRIBUTION == "Exit":
+    if distribution.SET_DISTRIBUTION == "":
+        distribution.set_distribution()
+    if distribution.SET_DISTRIBUTION == "Exit":
         return 
-    """
-    for app in config.programs_to_install: 
-        answer = app.ask()
-        if answer:
-            installed = app.install()
-            if not installed:
-                app.install_error()
-    """
+    apps = selector.select_programs()
+    for app in apps: 
+        app.install()
     
 if __name__ == "__main__":
     main()

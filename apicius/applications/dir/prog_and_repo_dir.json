@@ -1,15 +1,12 @@
 {
     "name":"Program and repositories directory",
-    "info":"",
-    "ask": "",
+    "info":"makes a program and repositories directory in the home directory",
     "distribution":{
         "Unix":{
             "cmd":[
                "mkdir ~/Programs",
                "mkdir ~/Programs/repositories"
-            ],
-            "note": "",
-            "ask":""
+            ]
         }
     }
 }

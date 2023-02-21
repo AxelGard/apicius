@@ -1,0 +1,11 @@
+{
+    "name":"apt update",
+    "info":"updates the package lists for upgrades for packages that need upgrading",
+    "distribution":{
+        "Ubuntu":{
+            "cmd":[
+               "sudo apt update"
+            ]
+        }
+    }
+}
