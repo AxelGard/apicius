@@ -31,10 +31,11 @@ those install processes needs sudo.
 
 will add a more exnstiv totorial later but for now look at 
 ```bash 
-apicius/apicius/applications/template.py
+cp apicius/apicius/applications/template.json apicius/apicius/applications/myapp.json
 ```
-just copy the template file and add the install steps in the 
-install method. 
+just copy the template file and add the install commands in the cmd value in the json file. 
+As well as any other relevant information. 
+> feel free to make a PR with other programs that you think should be easy to install. 
 
 ## Contribute
 
