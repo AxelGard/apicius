@@ -1,10 +1,11 @@
+from typing import List
 import json 
 from ..distrobution import SET_DISTRIBUTION
 
 def find_categories():
     pass 
 
-def parse_files(files:list[str]) -> list[str]:
+def parse_files(files:List[str]) -> List[str]:
     result = []
     for file in files: 
         f = open(file)

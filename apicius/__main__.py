@@ -1,6 +1,14 @@
-from . import config
 from . import distrobution
 from . import logo
+import json 
+
+def load_config():
+    f = open("./config.json")
+    data = json.load(f)
+    f.close()
+    return data
+
+
 
 def main() -> None: 
     logo.print_logo()
